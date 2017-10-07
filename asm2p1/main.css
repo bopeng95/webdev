@@ -91,6 +91,28 @@ section {
 	width:250px;
 }
 
+.back {
+	text-decoration: none;
+	color:#8B8D91;
+}
+
+.back:hover {
+	color:black;
+}
+
+.containerDoc {
+	margin: 0 auto;
+	max-width:800px;
+	padding:20px;
+	border-left:1px solid lightgray;
+	border-right:1px solid lightgray;
+}
+
+.newdoc {
+	text-align:center;
+	margin-top:80px;
+}
+
 .shadow {
 	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 
 	0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);

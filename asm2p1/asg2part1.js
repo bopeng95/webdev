@@ -57,6 +57,31 @@ function swapI() {
 	obj1.src = img2
 }
 
+
+//5
+function newdoc() {
+	let d = new Date();
+	let date = (d.getMonth()+1) + ' - ' + d.getDate() + ' - ' + d.getFullYear()
+	let day = d.getDay();
+	let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+	let img = document.getElementById("image")
+	h = img.clientHeight;
+	w = img.clientWidth;
+
+	let text = '<div class = "containerDoc newdoc alpha-font"><img src="../website/img/matcha2.jpg" width="300" style="border-radius:25px;"><h1 class = "alpha-font">Matcha Tea</h1><p>This is a picture of a matcha drink I found online</p><br><p style="border-bottom:1px solid lightgray;width:150px;margin:0 auto;">Image Properties</p>';
+	document.open();
+	document.title = "Image Info";
+	document.write("<html><head><title>Image Info</title><link rel='stylesheet' href='main.css' type='text/css'></head><body>");
+
+	document.write(text);
+	document.write('<p>' + w + ' X ' + h + '</p><br>');
+	document.write('<p>Date: ' + date + '</p>');
+	document.write('<p>Day: ' + days[day] + '</p>');
+	document.write('<p><a href="asg2part1.html" class = "back alpha-font">Back</a><p>')
+	document.write("</div></body></html>");
+	document.close();
+}
+
 //6
 function convert() {
 	let cel = document.getElementById("cel").value;
