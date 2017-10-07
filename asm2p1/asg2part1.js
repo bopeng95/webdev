@@ -8,7 +8,15 @@ function changeBkgd() {
 }
 
 function changeBorder() {
-	document.getElementById("parag").style.border = '3px solid red';
+	document.getElementById("parag").style.border = '3px solid green';
+}
+
+function changeText() {
+	document.getElementById("parag").innerHTML = 'HELLOOOOOOO</p><p>THEREEEEE'
+}
+
+function changeFontSize() {
+	document.getElementById("parag").style.fontSize = '20px';
 }
 
 //2
@@ -47,4 +55,14 @@ function swapI() {
 
 	obj2.src = img1
 	obj1.src = img2
+}
+
+//6
+function convert() {
+	let cel = document.getElementById("cel").value;
+	let fah = document.getElementById("fah")
+
+	let c = parseInt(cel);
+	let result = (1.8*c) + 32;
+	fah.innerHTML = result + ' F';
 }

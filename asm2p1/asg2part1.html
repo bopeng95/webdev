@@ -36,48 +36,50 @@
 
             <div class="work">
                 <section>
-                    <p class="alpha-font subtitle">Style Applications</p>
+                    <p class="alpha-font subtitle">1. Style Applications</p>
                     <div id = "sectOne" style="padding:10px 20px;">
                         <h1 id="h1-1" class = "alpha-font" onclick="changeH1()">CLICK ME TO CHANGE ME</h1>
-                        <button class="btn alpha-font" onclick="changeBkgd()" style="margin-top:-10px;">Change Background Color</button>
-                        <button class="btn alpha-font" onclick="changeBorder()" style="margin-top:-10px;">Change Border</button>
+                        <button class="btn alpha-font" onclick="changeBkgd()" style="margin-top:-10px;">Change Bkgd Color</button>
+                        <button class="btn alpha-font" onclick="changeBorder()" style="margin-top:-10px;">Change Border</button><p></p>
+                        <button class="btn alpha-font" onclick="changeText()" style="margin-top:-10px;">Change Text</button>
+                        <button class="btn alpha-font" onclick="changeFontSize()" style="margin-top:-10px;">Change Font-Size</button>
                         <p id = "parag" style="padding:0 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam illo maiores qui atque, veniam ratione autem adipisci ea nam, culpa blanditiis consequuntur! Quam eius, eum et enim, assumenda eligendi nesciunt?</p>
                     </div>
                 </section>
                 <section>
-                    <p class="alpha-font subtitle">Prize Application</p>
+                    <p class="alpha-font subtitle">2. Prize Application</p>
                     <p class = "beta-font" style="border-bottom:1px solid lightgray;">Click button below to win a car!</p>
                     <p>2013 Model BMW</p><p>2016 Model Tesla</p><p>2010 Model Mercedes Benz</p><p>2017 Model Toyota</p><p>2014 Model Ford</p>
                     <button class = "btn" onclick = "randarray()">Click Me</button>
                     <p id = "user"></p>
                 </section>
                 <section>
-                    <p class="alpha-font subtitle">Swap Text Application</p>
+                    <p class="alpha-font subtitle">3. Swap Text Application</p>
                     <button class = "btn" onclick = "swapT()">Swap Texts</button>
                     <p id="p1" style="padding:15px;border:1px solid red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsum vero, tempore. Eaque, corporis distinctio unde nihil culpa perspiciatis, aut voluptatibus assumenda facere consectetur vitae deserunt iure modi nam neque.</p>
                     <p id="p2" style="padding:15px;border:1px solid blue;">A process contains a number of resources such as address space, open files, accounting information, etc. In addition to these resources, a process has a thread of control, e.g., program counter, register contents, stack.</p>
                 </section>
                 <section>
-                    <p class="alpha-font subtitle">Swap Img Application</p>
+                    <p class="alpha-font subtitle">4. Swap Img Application</p>
                     <button class = "btn" onclick = "swapI()">Swap Images</button>
                     <p></p>
                     <img id="img1" src="img/image1.png" width="200">
                     <img id="img2" src="img/image2.png" width="200">
                 </section>
                 <section>
-                    <p class="alpha-font subtitle">Generate New Doc App</p>
+                    <p class="alpha-font subtitle">5. Generate New Doc App</p>
                     
                 </section>
                 <section>
-                    <p class="alpha-font subtitle">Birthday Applications</p>
-                    <div id = "bday">
-                    <p class="separate">Enter Person 1 name <input></input></p>
-                    <p class="separate">Enter Person 1 bday <input></input></p>
-                    <p>Enter Person 2 name <input></input></p>
-                    <p>Enter Person 2 bday <input></input></p>
+                    <p class="alpha-font subtitle">6. Simple Converter App</p>
+                    <div id = "convert">
+                        <p>Celsius To Fahrenheit<br><input type="text" id = "cel" style="height:20px" required placeholder="Enter Celsius" style="width:150px;"></input></p>
+                        <button class = "alpha-font btn" style = "width:155px;margin:0 auto;" onclick="convert()">Convert</button><p></p>
+                        <textarea id = "fah" rows="3"></textarea>
                     </div>
 
                 </section>
+                <section style = "margin-bottom: 100px;"></section>
             </div>
 
         </div>
