@@ -28,7 +28,7 @@ function randarray() {
 		['Toyota', '2017 Model'],
 		['Ford', '2014 Model']
 	]
-	let num = Math.floor(Math.random()*6);
+	let num = Math.floor(Math.random()*5);
 
 	let user = document.getElementById("user");
 

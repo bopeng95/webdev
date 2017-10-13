@@ -23,7 +23,7 @@
     </head>
 
     <!--BODY STARTS HERE-->
-    <body >
+    <body>
 
         <div class = "container">
 
@@ -37,19 +37,29 @@
             <div class="work">
                 <section>
                     <p class="alpha-font subtitle">1. Prize Application</p>
-
+                    <p class = "beta-font" style="border-bottom:1px solid lightgray;width:300px;margin:10px auto;">Click button below to win something!</p>
+                    <p>$300 Nintendo Switch</p><p>$200 PS4</p><p>$250 XBOX One</p><p>$924.04 Dinner with Anderson</p><p>$50 Pokemon game</p>
+                    <button class="btn" onclick="randarray()">Click Me</button>
+                    <p id = "prize"></p>
                 </section>
                 <section>
                     <p class="alpha-font subtitle">2. Birthday Application</p>
-
+                    <div id="bday" class = "alpha-font">
+                        <p>Enter 1st person name<br><input id="1name" class="inputs" type="text" required></p>
+                        <p>Enter 1st person bday<br><input id="1bday" class="inputs" type="date" required></p>
+                        <p>Enter 2nd person name<br><input id="2name" class="inputs" type="text" required></p>
+                        <p>Enter 2nd person bday<br><input id="2bday" class="inputs" type="date" required></p>
+                    </div>
+                    <button class="btn alpha-font" type="button" onclick="bdays()">Show Output</button>
+                    <h1 id="outputs" class = "beta-font"></h1>
                 </section>
-                <section style = "margin-bottom: 100px;"></section>
             </div>
 
             <section>
                 <p class="alpha-font subtitle">3. Calendar Holiday Application</p>
-                    
             </section>
+
+            <section style = "margin-bottom: 100px;"></section>
 
         </div>
 
