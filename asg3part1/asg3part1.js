@@ -1,4 +1,6 @@
 window.onload = printPrizes;
+
+//1
 let prizes = [
     ['Nintendo Switch', '$300'],
     ['PS4', '$200'],
@@ -6,7 +8,7 @@ let prizes = [
     ['Dinner with Anderson', '$924.04'],
     ['Pokemon game', '$50']
 ]
-//1
+
 function printPrizes() {
     let str = '';
     for(var i = 0; i < prizes.length; i++) {
@@ -80,6 +82,29 @@ function bdays() {
 }
 
 //3
+let nyuHolidays = [
+    ['942017', 'Labor Day'],
+    ['952017', 'Fall 2017 classes begin'],
+    ['1092017', 'Fall Recess'],
+    ['11222017', 'Student Thanksgiving Recess'],
+    ['11232017', 'Student Thanksgiving Recess'],
+    ['11242017', 'Student Thanksgiving Recess'],
+    ['12122017', 'Legislative Day'],
+    ['12232017', 'Winter Recess begins'],
+    ['1152018', 'MLK Jr. Birthday'],
+    ['1222018', 'Spring 2018 classes begin'],
+    ['2192018', 'Presidents\' Day'],
+    ['3122018', 'Spring Recess'],
+    ['3132018', 'Spring Recess'],
+    ['3142018', 'Spring Recess'],
+    ['3152018', 'Spring Recess'],
+    ['3162018', 'Spring Recess'],
+    ['5282018', 'Memorial Day'],
+    ['6162018', 'Legislative Day for Mon classes'],
+    ['742018', 'Independence Day'],
+    ['7282018', 'Legislative Day for Wed classes'],
+]
+
 function chkHoliday() {
     let h = document.getElementById("d").value;
     let result = document.getElementById("holiday-result");
@@ -90,5 +115,22 @@ function chkHoliday() {
     let hday = hdate.getUTCDate();
     let hyr = hdate.getFullYear();
 
-    result.innerHTML = 'hello';
+    if(hday === 1) { hmonth++; }
+
+    result.innerHTML = displayHoli(hmonth, hday, hyr);
+}
+
+function displayHoli(month, day, year) {
+    if((month < 9 && year === 2017) || (month > 8 && year === 2018) || year > 2018 || year < 2017)
+        return 'Invalid Date, has to be between Sept 1, 2017 and Aug 31, 2018';
+    let date = ''+month+day+year;
+    let holi = 'No holiday on this day';
+
+    for(var i = 0; i < nyuHolidays.length; i++) {
+        if(date === nyuHolidays[i][0]) {
+            holi = nyuHolidays[i][1];
+            break;
+        }
+    }
+    return holi;
 }
