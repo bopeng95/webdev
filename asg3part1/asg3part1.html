@@ -38,7 +38,8 @@
                 <section>
                     <p class="alpha-font subtitle">1. Prize Application</p>
                     <p class = "beta-font" style="border-bottom:1px solid lightgray;width:300px;margin:10px auto;">Click button below to win something!</p>
-                    <p>$300 Nintendo Switch</p><p>$200 PS4</p><p>$250 XBOX One</p><p>$924.04 Dinner with Anderson</p><p>$50 Pokemon game</p>
+                    <!-- <p>$300 Nintendo Switch</p><p>$200 PS4</p><p>$250 XBOX One</p><p>$924.04 Dinner with Anderson</p><p>$50 Pokemon game</p> -->
+                    <div id = "items"></div>
                     <button class="btn" onclick="randarray()">Click Me</button>
                     <p id = "prize"></p>
                 </section>
@@ -57,6 +58,12 @@
 
             <section>
                 <p class="alpha-font subtitle">3. Calendar Holiday Application</p>
+                <div>
+                    <p style="font-size:20px;margin-bottom:5px;">Pick a Date</p>
+                    <input id="d" type="date" name="holiday"><br>
+                    <button onclick="chkHoliday()" class="btn" type="submit" style="margin-top:10px;">Check Holiday</button><br>
+                    <div class ="beta-font" id="holiday-result" style="margin-top:15px;font-size:18px;"></div>
+                </div>
             </section>
 
             <section style = "margin-bottom: 100px;"></section>

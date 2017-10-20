@@ -95,6 +95,10 @@ section {
 	font-size:15px;
 }
 
+#d {
+	font-size:20px;
+}
+
 .shadow {
 	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 
 	0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);

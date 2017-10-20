@@ -1,12 +1,21 @@
+window.onload = printPrizes;
+let prizes = [
+    ['Nintendo Switch', '$300'],
+    ['PS4', '$200'],
+    ['XBOX One', '$250'],
+    ['Dinner with Anderson', '$924.04'],
+    ['Pokemon game', '$50']
+]
 //1
+function printPrizes() {
+    let str = '';
+    for(var i = 0; i < prizes.length; i++) {
+        str += '<p>' + prizes[i][1] + ' ' + prizes[i][0] + '</p>';
+    }
+    document.getElementById('items').innerHTML=str;
+}
+
 function randarray() {
-    let prizes = [
-        ['Nintendo Switch', '$300'],
-        ['PS4', '$200'],
-        ['XBOX One', '$250'],
-        ['Dinner with Anderson', '$924.04'],
-        ['Pokemon game', '$50']
-    ]
 
     let num = Math.floor(Math.random()*5);
 
@@ -66,11 +75,20 @@ function bdays() {
                 }
             }
         }
-        console.log('fdate: '+fmonth+'-'+fday+'-'+fyr+'\n');
-        console.log('sdate: '+smonth+'-'+sday+'-'+syr);
     }
-
     output.innerHTML = str;
 }
 
 //3
+function chkHoliday() {
+    let h = document.getElementById("d").value;
+    let result = document.getElementById("holiday-result");
+
+    let hdate = new Date(h);
+
+    let hmonth = hdate.getMonth()+1;
+    let hday = hdate.getUTCDate();
+    let hyr = hdate.getFullYear();
+
+    result.innerHTML = 'hello';
+}
