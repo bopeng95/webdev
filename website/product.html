@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!--META HERE-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Food and Tea</title>
+
+        <!-- CSS -->
+        <link href="main.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/animate.css">
+
+        <!--JAVASCRIPT-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/main.js" type="text/javascript"></script>
+        <script src="product.js" type="text/javascript"></script>
+
+        <!--FAVICON-->
+        <link rel="icon" type="png" href="../img/favicon.png">
+
+    </head>
+
+    <!--BODY STARTS HERE-->
+    <body>
+        <i class="fa fa-bars fa-lg toggle-menu" aria-hidden="true"></i>
+
+        <nav class="sidebar-menu anim">
+            <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+
+            <center class="alpha-font">
+                <h1 class="boxed">menu</h1>
+            </center>
+            
+            <center>
+                <ul class="nav-contain beta-font">
+                    <a href = "index.html"><li class="nav-item">home</li></a>
+                    <a href = "pagetwo.html"><li class="nav-item">sources</li></a>
+                    <a href = "pagethree.html"><li class="nav-item">desserts</li></a>
+                    <a href = "pagefour.html"><li class="nav-item">matcha tea</li></a>
+                    <a href = "product.html"><li class="nav-item active-page">product</li></a>
+                    <a href = "contact.html"><li class="nav-item">contact</li></a>
+                    <a href = "../index.html"><li class="nav-item">back to <b>main</b> page</li></a>
+                </ul>
+            <center>
+        </nav>
+        
+        <div class="product-container">
+            <p class="alpha-font contact-title">matcha store</p>
+
+            <div class="content-container">
+                <div class="content">
+                    <section id="pic1" class="content-item images"></section><br>
+                    <div class="content-item info beta-font">
+                        <p>Price $4</p><br>
+                        <p>Quantity</p>
+                        <p><input id="four" type="number" value="0" min="0" onchange="firstitem();totalOut()"></p>
+                        <p>subtotal</p>
+                        <textarea name="" id="prod1" cols="19" rows="2">0</textarea>
+                    </div>
+                </div>
+                <div class="content">
+                    <section id="pic2" class="content-item images"></section><br>
+                    <div class="content-item info beta-font">
+                        <p>Price $5</p><br>
+                        <p>Quantity</p>
+                        <p><input id="five" type="number" value="0" min="0" onchange="seconditem();totalOut()"></p>
+                        <p>subtotal</p>
+                        <textarea name="" id="prod2" cols="19" rows="2">0</textarea>
+                    </div>
+                </div>
+                <div class="content">
+                    <section id="pic3" class="content-item images"></section><br>
+                    <div class="content-item info beta-font">
+                        <p>Price $6</p><br>
+                        <p>Quantity</p>
+                        <p><input id="six" type="number" value="0" min="0" onchange="thirditem();totalOut()"></p>
+                        <p>subtotal</p>
+                        <textarea name="" id="prod3" cols="19" rows="2">0</textarea>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="delivery-type">
+                <p class="beta-font subtitle">Delivery Method</p><br>
+                <p><input type="radio" id="p" name="deliv" value="pk" onclick="deliveryType()">&nbsp; Pickup</p>
+                <p><input type="radio" id="d" name="deliv" value="dv" onclick="deliveryType()">&nbsp; Delivery ($5)</p>
+            </div>
+
+            <div class="total">
+                <p class="alpha-font">Total</p>
+                <textarea name="" id="totaloutput" cols="20" rows="2">0</textarea>
+            </div>
+
+            <div>
+                <form name="form1" action="#" onsubmit="receipt() ;return false">
+                <fieldset class="prod-fieldset">
+                    <legend class = "alpha-font" style="margin-left:20px;font-size:20px;"> &nbsp; Personal Info &nbsp; </legend>
+                    <div class="fs-item1">
+                        <div>
+                            <p>Full Name</p>
+                            <input type="text" name="Name">
+                        </div>
+                        <div>
+                            <p>Phone Number</p>
+                            <input type="number" name="Phone">
+                        </div>
+                        <div>
+                            <p>Email</p>
+                            <input type="text" name="Email">
+                        </div>
+                    </div>
+                    <p class="beta-font" style="font-size:15px;text-align:center;"><b>Address</b></p>
+                    <div class="fs-item2">
+                        <div>
+                            <p>Street Address</p>
+                            <input type="text" name="Street">
+                        </div>
+                        <div>
+                            <p>City</p>
+                            <input type="text" name="City">
+                        </div>
+                        <div>
+                            <p>State</p>
+                            <input type="text" name="State">
+                        </div>
+                        <div>
+                            <p>Zip</p>
+                            <input type="text" name="Zip">
+                        </div>
+                    </div>
+                    <p class="beta-font" style="font-size:15px;text-align:center;"><b>Credit Card</b></p>
+                    <div class="fs-item3">
+                        <div>
+                            <p>CC Type</p>
+                            <select name="CC type">
+                                <option value="Visa"> Visa </option>
+                                <option value="AMEX"> AMEX </option>
+                                <option value="MasterCard"> MasterCard </option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Number</p>
+                            <input type="text" name="CC Number">
+                        </div>
+                        <div>
+                            <p>Exp Date</p>
+                            <input type="text" name="CC Exp Date">
+                        </div>
+                        <div>
+                            <p>Code</p>
+                            <input type="text" name="CC Code">
+                        </div>
+                    </div>
+                </fieldset>
+                <div style="margin:0 auto;text-align:center">
+                    <button class="alpha-font btn" type="submit">Submit</button><button class="alpha-font btn" type="reset">Reset</button>
+                </div>
+                </form>
+            </div>
+            <div class="beta-font receipt" id="rOutput"></div>
+
+        </div>
+
+        <footer class = "alpha-font">
+            <div class="footer-contain">
+                <section class="footer-info">
+                    <p>Bo Peng</p>
+                    <p>Fall 2017</p>
+                    <a href = "../index.html"><p>Web Development</p></a>
+                </section>
+                <section class="footer-info" style="margin-left:20px;">
+                    <a href="https://en.wikipedia.org/wiki/Food" target = "_blank"><p>Food info from <b>WIKI<b></p></a>
+                    <a href="https://en.wikipedia.org/wiki/Tea" target = "_blank"><p>Tea info from <b>WIKI<b></p></a>
+                    <a href="https://en.wikipedia.org/wiki/Matcha" target = "_blank"><p>Matcha info from <b>WIKI<b></p></a>
+                </section>
+            </div>
+        </footer>
+
+        <!--UP ARROW-->
+        <section id="arrow"> 
+            <i class="fa fa-long-arrow-up fa-lg" aria-hidden="true"></i>
+        </section>
+
+    </body>
+</html>
