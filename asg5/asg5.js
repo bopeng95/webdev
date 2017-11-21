@@ -20,6 +20,27 @@ $(document).ready(function(){
 		$('#image').fadeOut("slow");
 	});
 
+	$("#anim").on('click', function() {
+		$('#box').animate({left: '40px'});
+	});
 
-	
+	$("#userpass").on('click', function() {
+		if($("#user").val() === '' && $("#pass").val() !== '') {
+			$("#user").css("background-color", "yellow").focus();
+			$("#pass").css("background-color", "white").focus();
+		}
+		else if($("#pass").val() === '' && $("#user").val() !== '') {
+			$("#pass").css("background-color", "yellow").focus();
+			$("#user").css("background-color", "white").focus();
+		}
+		else if($("#user").val() === '' && $("#user").val() === '') {
+			$("#user").css("background-color", "yellow").focus();
+			$("#pass").css("background-color", "yellow").focus();
+		}
+		else {
+			$("#user").css("background-color", "white").focus();
+			$("#pass").css("background-color", "white").focus();
+			$("#demo").html("<p>username: " + $("#user").val() + "</p><p>Password: " + $("#pass").val() + "</p>");
+		}
+	});
 });
