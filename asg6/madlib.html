@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!--META HERE-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>A6</title>
+
+        <!-- CSS -->
+        <link href="main.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+        <!--JAVASCRIPT-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="asg5.js" type="text/javascript"></script>
+
+        <!--FAVICON-->
+        <link rel="icon" type="png" href="../img/favicon.png">
+
+    </head>
+
+    <!--BODY STARTS HERE-->
+    <body>
+
+        <div class = "container">
+            
+            <section class = "home-box scaling shadow">
+                <a href = "../index.html" class = "home-button alpha-font">Home</a>
+            </section>
+            <section class = "header width-limit">
+                <p class = "alpha-font">Assignment 6</p>
+            </section>
+
+            <div class="work">
+                <section>
+                    <p class="alpha-font subtitle">1. Mab Libs Applications</p>
+                    <div class="beta-font" style="padding:10px 20px;">
+                        <form action="madlib.php" method="GET" style="font-size:15px;">
+                            <p>Enter adjective: <input type="text" name="adj1"></p>
+                            <p>Enter another adjective: <input type="text" name="adj2"></p>
+                            <p>Enter noun: <input type="text" name="noun1"></p>
+                            <p>Enter a first verb: <input type="text" name="verb1"></p>
+                            <p>Enter another noun: <input type="text" name="noun2"></p>
+                            <p>Enter a number: <input type="text" name="num1"></p>
+                            <p>Enter a second verb: <input type="text" name="verb2"></p>
+                            <p>Enter third noun: <input type="text" name="noun3"></p>
+                            <button class="alpha-font btn">Submit</button>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <p class="alpha-font subtitle">2. Calculator Application</p>
+                    <form action="add.php" method="GET" style="font-size:15px;">
+                        <p>1st number: <input type="number" name="firstnum"></p>
+                        <p>2nd number: <input type="number" name="secondnum"></p>
+                        <p>Operator</p>
+                        <p><input type="radio" name="opt" value="/">/</p>
+                        <p><input type="radio" name="opt" value="*">*</p>
+                        <p><input type="radio" name="opt" value="+">+</p>
+                        <p><input type="radio" name="opt" value="-">-</p>
+                        <button class="alpha-font btn">Submit</button>
+                    </form>
+                </section>
+                <section>
+                    <p class="alpha-font subtitle">3. Simple Form Application</p>
+                    <form action="online.php" method="GET" style="font-size:15px;">
+                        <p>Name: <input type="text" name="name"></p>
+                        <p>Email: <input type="text" name="email"></p>
+                        <p>Products</p>
+                        <p>jasmine tea $5 <input type="number" name="jasmine"></p>
+                        <p>black tea $3 <input type="number" name="black"></p>
+                        <button class="alpha-font btn">Submit</button>
+                        <button class="alpha-font btn" type="reset">Reset</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+    </body>
+</html>
