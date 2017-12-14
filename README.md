@@ -1,2 +1,3 @@
-# webdev
-Assignments and projects from Web Development and Programming class in NYU
+# Web Development
+
+Here is the website I have made for Web Development
